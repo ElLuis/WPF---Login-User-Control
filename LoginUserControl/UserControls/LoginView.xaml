@@ -24,7 +24,7 @@
         </Grid.RowDefinitions>
         <Label x:Name="loginLabel"
                HorizontalAlignment="Center"
-               VerticalAlignment="Bottom"
+               VerticalAlignment="Center"
                Content="User name :"
                FontFamily="Lucida Sans"
                FontSize="24"
@@ -33,7 +33,7 @@
                Foreground="#FFBCD6E8"
                Grid.Column="0"
                Grid.Row="0"
-               Margin="0"
+               Margin="0,50,0,0"
                OverridesDefaultStyle="True" />
         <Line x:Name="lineUnderLogin"
               VerticalAlignment="Bottom"
@@ -60,7 +60,7 @@
               HorizontalAlignment="Right" />
         <Label x:Name="passwordLabel"
                HorizontalAlignment="Center"
-               VerticalAlignment="Top"
+               VerticalAlignment="Center"
                Content="Password :"
                FontFamily="Lucida Sans"
                FontSize="24"
@@ -68,8 +68,7 @@
                Background="#00000000"
                Foreground="#FFBCD6E8"
                Grid.Column="0"
-               Grid.Row="2"
-                />
+               Grid.Row="2" />
         <Line x:Name="lineUnderPassword"
               VerticalAlignment="Top"
               Margin="0,0,0,50"
@@ -81,7 +80,37 @@
               Grid.Column="0"
               Grid.Row="3"
               Grid.ColumnSpan="2" />
-       
+        <TextBox x:Name="userNameTB"
+                 Grid.Row="0"
+                 Grid.Column="1"
+                 Background="#FFCAACAC"
+                 HorizontalAlignment="Left"
+                 Width="370"
+                 CaretBrush="#FFC57272"
+                 BorderBrush="#FFD49623"
+                 BorderThickness="2"
+                 Margin="20,60,0,10"
+                 FontFamily="Lucida Sans"
+                 FontSize="22"
+                 VerticalContentAlignment="Center"
+                 Foreground="#FF341515"
+                 MinHeight="42"
+                 VerticalAlignment="Center" />
+        <TextBox x:Name="passwordTB"
+                 Grid.Column="1"
+                 Grid.Row="2"
+                 Background="#FFCAACAC"
+                 HorizontalAlignment="Left"
+                 Width="370"
+                 CaretBrush="#FFC57272"
+                 BorderBrush="#FFD49623"
+                 BorderThickness="2"
+                 Margin="20.4,10,0,10"
+                 FontFamily="Lucida Sans"
+                 FontSize="22"
+                 VerticalContentAlignment="Center"
+                 Foreground="#FF341515"
+                 MinHeight="42" />
     </Grid>
 
 </UserControl>
