@@ -1,0 +1,87 @@
+﻿<UserControl x:Class="LoginUserControl.UserControls.LoginUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:LoginUserControl.UserControls"
+             mc:Ignorable="d"
+             d:DesignHeight="350"
+             d:DesignWidth="720">
+    <Grid x:Name="mainGrid"
+          Width="720"
+          Height="350"
+          Background="#FF834444">
+        <!--Define rows and columns-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250" />
+            <ColumnDefinition Width="auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Label x:Name="loginLabel"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Bottom"
+               Content="User name :"
+               FontFamily="Lucida Sans"
+               FontSize="24"
+               FontWeight="Bold"
+               Background="#00000000"
+               Foreground="#FFBCD6E8"
+               Grid.Column="0"
+               Grid.Row="0"
+               Margin="0"
+               OverridesDefaultStyle="True" />
+        <Line x:Name="lineUnderLogin"
+              VerticalAlignment="Bottom"
+              Margin="0,0,0,50"
+              StrokeThickness="7"
+              Stretch="UniformToFill"
+              Stroke="#FFD49623"
+              Fill="#FFB17F23"
+              X1="10"
+              Grid.Column="0"
+              Grid.Row="1"
+              Grid.ColumnSpan="2" />
+        <Line x:Name="lineUnderLogin1"
+              VerticalAlignment="Center"
+              Margin="0,0,0,50"
+              StrokeThickness="7"
+              Stretch="Uniform"
+              Stroke="#FFD49623"
+              Fill="#FFB17F23"
+              X1="10"
+              Grid.Column="1"
+              Grid.Row="1"
+              MinWidth="470"
+              HorizontalAlignment="Right" />
+        <Label x:Name="passwordLabel"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Top"
+               Content="Password :"
+               FontFamily="Lucida Sans"
+               FontSize="24"
+               FontWeight="Bold"
+               Background="#00000000"
+               Foreground="#FFBCD6E8"
+               Grid.Column="0"
+               Grid.Row="2"
+                />
+        <Line x:Name="lineUnderPassword"
+              VerticalAlignment="Top"
+              Margin="0,0,0,50"
+              StrokeThickness="7"
+              Stretch="UniformToFill"
+              Stroke="#FFD49623"
+              Fill="#FFB17F23"
+              X1="10"
+              Grid.Column="0"
+              Grid.Row="3"
+              Grid.ColumnSpan="2" />
+       
+    </Grid>
+
+</UserControl>
