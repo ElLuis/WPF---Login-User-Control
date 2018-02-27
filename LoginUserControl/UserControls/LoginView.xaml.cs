@@ -20,29 +20,35 @@ namespace LoginUserControl.UserControls
     /// </summary>
     public partial class LoginUC : UserControl
     {
-        private static List<Models.CredentialsSource> credentials;
+        private string username;
+        private string password;
+  
         public LoginUC()
         {
             InitializeComponent();
         }
-
-        private void cancelButton_Click(object sender, RoutedEventArgs e)
+        public string Username
         {
-            passwordTB.Password = String.Empty;
-            userNameTB.Text = String.Empty;
+            get
+            {
+                return username;
+            }
+            set
+            {
+                username = userNameTB.Text;
+            }
         }
 
-        private void loginButton_Click(object sender, RoutedEventArgs e)
+        public string Password
         {
-            string password = passwordTB.Password.ToString();
-            string username = userNameTB.Text;
-            credentials.Add(new Models.CredentialsSource(username,password));
+            get
+            {
+                return password;
+            }
+            set
+            {
+                username = passwordTB.Password;
+            }
         }
-
-        public static List<Models.CredentialsSource> GetCredentials()
-        {
-            var result = credentials.ToList<Models.CredentialsSource>();
-            return result;
-        }
-     } 
+    } 
 }

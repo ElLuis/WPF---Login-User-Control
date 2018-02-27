@@ -3,10 +3,53 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:views="clr-namespace:LoginUserControl.UserControls"
         xmlns:local="clr-namespace:LoginUserControl"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Login UI" Height="360" Width="720">
     <Grid>
         
+        <views:LoginUC Grid.Row="0"></views:LoginUC>
+        <!--Container for buttons-->
+
+        <Button x:Name="cancelButton"
+                Grid.RowSpan="2"
+                Grid.Row="0"
+                Width="73.6"
+                Height="45"
+                    Content="Cancel"
+                    Padding="5,0"
+                    Margin="182,0,40,20"
+                    VerticalAlignment="Bottom"
+                    Background="#FFCAACAC"
+                    Foreground="#FF341515"
+                    FontFamily="Lucida Sans"
+                    FontSize="18"
+                    FontWeight="Bold"
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Center"
+                    MinWidth="73.6"
+                    Click="cancelButton_Click" />
+            <Button x:Name="loginButton" Grid.RowSpan="2" Grid.Row="0"
+                Width="73.6"
+                Height="45"
+                    Content="Login"
+                    Padding="5,0"
+                Margin="490,0,0,20"
+                VerticalAlignment="Bottom"
+                    Background="#FFCAACAC"
+                    Foreground="#FF341515"
+                    FontFamily="Lucida Sans"
+                    FontSize="18"
+                    FontWeight="Bold"
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Center"
+                    MinWidth="73.6"
+                    Click="loginButton_Click" />
+
+        <!--edit-->
+        <Label Name="userLabel"
+               Content="replace with user"  VerticalAlignment="Bottom"/>
+
     </Grid>
 </Window>

@@ -34,7 +34,7 @@
                Grid.Column="0"
                Grid.Row="0"
                Margin="0,50,0,0"
-               OverridesDefaultStyle="True" />
+               />
         <Line x:Name="lineUnderLogin"
               VerticalAlignment="Bottom"
               Margin="0,0,0,50"
@@ -113,7 +113,7 @@
                      MinHeight="42" />
 
         <!--Container for buttons-->
-        <StackPanel Orientation="Horizontal"
+        <!--<StackPanel Orientation="Horizontal"
                     Grid.Column="1"
                     x:Name="buttonsPanel"
                     Grid.Row="3">
@@ -150,7 +150,7 @@
                     MinWidth="73.6"
                     Click="loginButton_Click" />
             
-        </StackPanel>
+        </StackPanel>-->
     </Grid>
 
 </UserControl>

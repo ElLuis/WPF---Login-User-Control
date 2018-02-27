@@ -23,6 +23,20 @@ namespace LoginUserControl
         public MainWindow()
         {
             InitializeComponent();
+            
+            
+            
+        }
+
+        private void cancelButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void loginButton_Click(object sender, RoutedEventArgs e)
+        {
+            UserControls.LoginUC loginUC = new UserControls.LoginUC();
+            userLabel.Content = loginUC.Username;
         }
     }
 }
